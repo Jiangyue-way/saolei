@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../image/bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.btn{
+    height: 70px;
+    width: 135px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    background-image: url('../image/btn.png');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.easy , .usual, .hard , .restart{
+    position: absolute;
+    width: 135px;
+    height: 70px;
+    left: 50px;
+    cursor: pointer;
+    border-radius: 20% 10% 15% 25%;
+    background-repeat: no-repeat;
+}
+.easy{
+    top: 190px;
+    background-image: url(../image/btn.png);
+    background-position: 0px -100px;
+}
+.usual{
+    top: 290px;
+    background-image: url(../image/btn.png);
+    background-position: -10px -200px;
+}
+.hard{
+    top: 390px;
+    background-image: url(../image/btn.png);
+    background-position: -15px -296px;
+}
+.restart{
+    top: 490px;
+    background-image: url(../image/btn.png);
+    background-position: -10px -382px;
+}
+.rule{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 580px;
+    left: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background-color: transparent;
+}
+.rule span{
+    vertical-align: -4px;
+}
+.box{
+    height: 600px;
+    width: 600px;
+    transform: perspective(800px) rotateX(45deg);
+    margin: -22px auto;
+    border-top: 1px solid #e2c105;
+    border-left: 1px solid #e2c105;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.box .littleDivEasy , .box .littleDivUsual , .box .littleDivHard{
+    border-right: 1px solid #e2c105;
+    border-bottom: 1px solid #e2c105;
+    box-shadow: 0 0 4px #300;
+    background: url('../image/caodi.jpg');
+    float: left;
+}
+.box .littleDivEasy{
+    width: 59px;
+    height: 59px;
+}
+.box .littleDivUsual{
+    width: 39px;
+    height: 39px;
+}
+.box .littleDivHard{
+    width: 29px;
+    height: 29px;
+}
+.flagBox{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 400px;
+    height: 50px;
+    margin-left: -200px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bolder;
+    display: none;
+}
+.alertBox{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.alertImg{
+    position: absolute;
+    width: 400px;
+    height: 350px;
+    background-size: 100% 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+.alertBox .close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('../image/close.png');
+    background-size: 100% 100%;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.box div.show{
+    background-image: url('../image/lei.jpg');
+    background-size: 100% 100%;
+}
+.box div.showNum{
+    background: #ECD0A1;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 49px;
+    text-align: center;
+}
+.box div.flag{
+    background-image: url('../image/flag.jpg');
+    background-size: 100% 100%;
+}
+.easy::after , .usual::after , .hard::after{
+    content: "";
+    height: 4px;
+    background: #fff;
+    border-radius: 1px;
+}
+.easy::after{
+    /* display: block; */
+    width: 90px;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.usual::after{
+    /* display: block; */
+    width: 100px;
+    margin-top: 56px;
+    margin-left: 15px;
+}
+.hard::after{
+    /* display: block; */
+    width: 88px;
+    margin-top: 58px;
+    margin-left: 20px;
+}
